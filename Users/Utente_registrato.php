@@ -16,8 +16,12 @@ class UtenteRegistrato extends Utente {
         $this -> password = $password; /* aggiunta variabile che si differenzia nel figlio */
     }
 
+    public function setRegistrazione(){
+        $this -> registrazione = true;
+    }
+
     public function getRegistrazione(){
-        return $this -> registrazione = true;
+        return $this -> registrazione;
     }
 
     

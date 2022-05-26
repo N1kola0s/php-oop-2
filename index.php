@@ -39,10 +39,12 @@ $utente= new Utente ('Giovanni', 'Rauso', 'giovanni.rauso@libero.it', 'Via Roma,
 
 var_dump($utente);
 
-$utenteRegistrato = new UtenteRegistrato( 'Pasquale', 'Palmieri', 'pasquale.palmieri@libero.it','Via Trieste, Caserta', true, 0,'blabla','xxx', true);
+$utenteRegistrato = new UtenteRegistrato( 'Pasquale', 'Palmieri', 'pasquale.palmieri@libero.it','Via Trieste, Caserta', true, 0,'blabla','xxx', false);
 
-$utenteRegistrato ->setSconto(true);
+$utenteRegistrato -> setRegistrazione();
+$utenteRegistrato -> setSconto(true);
 var_dump($utenteRegistrato);
+
 
 
 
