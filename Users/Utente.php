@@ -4,19 +4,33 @@
 
 class Utente {
 
-    protected $nome;
-    protected $cognome;
-    protected $email;
-    protected $indirizzo;
-    protected $cartaValida;
+    public $nome;
+    public $cognome;
+    public $email;
+    public $indirizzo;
+    public $cartaValida;
+    public $registrazione = false;
+    public $sconto = 0;
 
-    function __construct(String $nome, String $cognome, String $email, String $indirizzo, bool $cartaValida )
+    function __construct(String $nome, String $cognome, String $email, String $indirizzo, bool $cartaValida, bool $registrazione, int $sconto)
     {
         $this -> nome = $nome;
-        $this -> categoria = $cognome;
-        $this -> descrizione = $email;
-        $this -> prezzo = $indirizzo;
+        $this -> cognome = $cognome;
+        $this -> email = $email;
+        $this -> indirizzo = $indirizzo;
         $this -> cartaValida = $cartaValida;
+        $this -> sconto = $sconto;
+        $this -> registrazione = $registrazione;
+    }
+
+    public function setSconto($registrazione){
+        if ($registrazione === true){
+            $this -> sconto = 0.20;
+        }
+    }
+
+    public function getSconto(){
+        return $this -> sconto; 
     }
 }
 
