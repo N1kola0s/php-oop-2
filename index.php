@@ -34,12 +34,17 @@ require_once __DIR__."/Users/Utente.php";
 require_once __DIR__."/Users/Utente_registrato.php";
 
 
-
+/* creo oggetto utente non registrato */
 $utente= new Utente ('Giovanni', 'Rauso', 'giovanni.rauso@libero.it', 'Via Roma, Caserta', true, false,0);
 
+/* dumpo utente a schermo */
 var_dump($utente);
 
+/* creo oggetto utente registrato */
+
 $utenteRegistrato = new UtenteRegistrato( 'Pasquale', 'Palmieri', 'pasquale.palmieri@libero.it','Via Trieste, Caserta', true, 0,'blabla','xxx', false);
+
+/* dumpo a schermo oggetto figlio utente non registrato dopo aver invocato metodo che cambia valore della variabile Registrazione il metodo che restituisce lo sconto del 20%  */
 
 $utenteRegistrato -> setRegistrazione();
 $utenteRegistrato -> setSconto(true);
@@ -55,6 +60,8 @@ $cuccia = new Prodotto ('Letto Basic', 'oggetto', 'gatto', 'Letto per gatti in m
 $pallina = new Prodotto ('Palla- Matix', 'giochi', 'gatto', 'Simpaticissima pallina in gomma per il tuo migliore amico a quattro zampe', 5, 20 );
 
 $corda = new Prodotto ('Trixie - Corda Osso', 'giochi', 'cane', 'Trixie ha studiato una linea di giochi ideali non solo a far divertire il tuo cane, ma anche utilissimi per aiutare il tuo pet a mantenere la sua igiene orale. Con la coloratissima corda per cani di Trixie in misto cotone, la cura dell’igiene orale del tuo cane sarà molto più divertente del previsto!', 4.13, 0);
+
+/* dichiaro un array vuoto e pusho all'interno i singoli oggetti prodotti creati e lo dumpo a schermo */
 
 $prodotti=[];
 array_push($prodotti, $crocchette, $cuccia, $pallina, $corda);
