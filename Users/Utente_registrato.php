@@ -16,9 +16,12 @@ class UtenteRegistrato extends Utente {
         $this -> password = $password; /* aggiunta variabile che si differenzia nel figlio */
     }
 
+    /* implemento un metodo che setti il valore booleano assegnato alle istanze degli utenti registrati su 'true' */
     public function setRegistrazione(){
         $this -> registrazione = true;
     }
+
+    /* implemento un metodo get che resituisca il valore assegnato in registrazione */
 
     public function getRegistrazione(){
         return $this -> registrazione;
