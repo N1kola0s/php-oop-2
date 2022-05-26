@@ -10,7 +10,7 @@ class Utente {
     protected $indirizzo;
     protected $cartaValida;
 
-    function __construct(String $nome, String $cognome, String $email, mixed $indirizzo, bool $cartaValida )
+    function __construct(String $nome, String $cognome, String $email, String $indirizzo, bool $cartaValida )
     {
         $this -> nome = $nome;
         $this -> categoria = $cognome;
