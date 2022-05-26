@@ -25,6 +25,7 @@ class UtenteRegistrato extends Utente {
 
     public function getRegistrazione(){
         return $this -> registrazione;
+        
     }
 
     
