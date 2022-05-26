@@ -24,5 +24,10 @@ public function functionName( MyClass $variable, String $variable2, Int $variabl
 
 */
 
+/* Richiamo la classe genitore dei prodotti */
+require_once __DIR__."/Products/Prodotto.php";
+
+/* Richiamo la classe genitore degli utenti  */
+require_once __DIR__."/Users/Utente.php";
 
 
