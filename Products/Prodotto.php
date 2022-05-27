@@ -1,8 +1,21 @@
 <?php
+/* implemento un trait */
+
+trait Vacanze{
+    public $comunicazione;
+
+    public function chiusuraEstiva(){
+        /* imposto una stringa che richiamerò in ogni classe */
+        $this -> comunicazione = 'RICORDIAMO: Lo shop resterà chiuso dal 1 al 31 Agosto';
+    }
+}
 
 /* Implemento una Classe genitore */
 
 class Prodotto {
+
+    use Vacanze;
+
 
     public $nome;
     public $categoria_prodotto;

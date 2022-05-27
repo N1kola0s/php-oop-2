@@ -3,6 +3,8 @@
 /* Implemento una classe figlia di Utente */
 
 class UtenteRegistrato extends Utente {
+    /* use Vacanze; */
+
     public $username;
     public $password;
 
@@ -28,6 +30,5 @@ class UtenteRegistrato extends Utente {
         
     }
 
-    
 
 }
