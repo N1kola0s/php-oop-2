@@ -33,6 +33,17 @@ class Prodotto {
         $this -> prezzo = $prezzo;
         $this -> disponibilita = $disponibilita;
     }
+
+    /* implementato un metodo che nel caso l'oggetto abbia prezzo uguale a zero si attivi un exception */
+    function verificaPrezzo($prezzo){
+
+        if($this-> $prezzo == 0) {
+            throw new Exception("Attenzione! Non è possibile che il valore del prezzo sia uguale a 0, imposta un prezzo al prodotto con valore superiore");
+          }
+          return true;
+    }
+
+    
 }
 
 

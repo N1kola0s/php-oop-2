@@ -74,6 +74,15 @@ $corda = new Prodotto ('Trixie - Corda Osso', 'giochi', 'cane', 'Trixie ha studi
 /* richiamo il trait Vacanze nella classe Prodotto */
 $corda->chiusuraEstiva();
 
+/* aggiungo un ipotetico oggetto con prezzo uguale a zero in modo da attivare un exception definito in prodotto */
+
+/* $paperella = new Prodotto ('Paperella- Matix', 'giochi', 'cane', 'Simpaticissima paperella in gomma per il tuo migliore amico a quattro zampe', 0, 20 );
+$paperella->verificaPrezzo(0);
+var_dump($paperella);  */
+
+/* se decommento la parte di codice sopra a questo comemento uscirà l'errore (in corrispondenza di un valore pari a zero) e comparirà la stringa inserita nel metodo verificaPrezzo' con all'interno un exceptions' */
+
+
 /* dichiaro un array vuoto e pusho all'interno i singoli oggetti prodotti creati e lo dumpo a schermo */
 
 $prodotti=[];
