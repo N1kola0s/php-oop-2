@@ -3,6 +3,7 @@
 /* Implemento una Classe genitore */
 /* implemento la classe utente */
 class Utente {
+    use Prezzo;
     /* dichiaro le variabili che caratterizzano la classe */
     public $nome;
     public $cognome;

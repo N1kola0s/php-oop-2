@@ -33,6 +33,8 @@ require_once __DIR__."/Users/Utente.php";
 /* Richiamo la classe figlia di Utenti */
 require_once __DIR__."/Users/Utente_registrato.php";
 
+require_once __DIR__."/Users/traitPrezzo.php";
+
 
 /* creo oggetto utente non registrato */
 $utente= new Utente ('Giovanni', 'Rauso', 'giovanni.rauso@libero.it', 'Via Roma, Caserta', true, false,0);
